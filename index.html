@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TostiElotes</title>
+  <link rel="stylesheet" href="estilos.css">
+ 
+  
+
+</head>
+<script>
+
+    function VerificarCredenciales() {
+        var usuario = document.getElementById("nombre").value;
+        var contraseña = document.getElementById("usuario").value;
+
+        if (usuario === "" || contraseña === "") {
+            alert("Por favor, complete todos los campos");
+        } else {
+
+            if (usuario === "admin" && contraseña === "123") {
+
+                window.location.href = "menu.html";
+            } else {
+                window.location.href = "registro.html";
+
+            }
+        }
+    }
+
+</script>
+
+<body>
+  <form id="form" align="center">
+
+    <img src="img/inic.jpg" width="60" height="60" border-radius: 10px;>
+
+
+
+
+
+
+
+    
+        <div align="center" >
+            <font color="Black" font size="4" font face="Arial"><label for="usuario"><b>    USUARIO:
+            </font></b></label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off">
+        </div>
+    
+        
+
+        <div align="center">
+            <font color="Black" font size="4" font face="Arial"><label for="usuario"><b>
+                        CONTRASEÑA:
+            </font></b></label>
+            <input type="text" id="usuario" autocomplete="off" name="usuario" acronym
+                        title="Ingresa tu usuario">
+        </div>
+        
+
+    
+    <div align="center"><button type="button" id="btn"
+        class="mi-boton"
+            onclick="VerificarCredenciales()"><b>ACCEDER</b></button></div>
+    
+
+    <div>
+        <td bgcolor="geer"><a href="registra.html"><acronym title="Ir">Registrarse</acronym></a></td>
+    </div>
+
+</form>
+</body>
+
+</html>
+<!--
+
+ 
+    <label  for="username" >Usuario: <input type="text" id="username" name="username" required autocomplete="off"></label>    
+    <label for="password">Contraseña: <input type="password" id="password" name="password"></label>
+    
+    <input type="submit" value="Enviar">
+   <div> .</div>
+
+-->
