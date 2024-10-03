@@ -1,0 +1,104 @@
+body {
+  line-height: 0.5;
+  margin: -40px;
+
+}
+
+.mi-boton {
+    background-color: #78BBE4; /* Cambia el color de fondo a azul */
+     color: #001AB8; /* Cambia el color del texto a blanco para que sea legible */
+    border: none; /* Elimina el borde del botón si no lo quieres */
+    padding: 10px 20px; /* Ajusta el relleno para que el botón sea más grande */
+    border-radius: 5px; /* Añade esquinas redondeadas para un aspecto más suave */
+    cursor: pointer; /* Cambia el cursor cuando pasas por encima del botón */
+}
+.rounded-table {
+    border-collapse: collapse;
+  }
+  
+  .rounded-table th, .rounded-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Ajusta el valor según desees */
+    font-family: Arial, sans-serif; /* Aplica la fuente Arial */
+    font-size: 20px;
+    
+  }
+  
+  .rounded-table th {
+    background-color: #88B3E8;
+  }
+
+
+  .table-container {
+    margin-top: 20px; /* Ajusta la cantidad de espacio según desees */
+  }
+
+  .container {
+    position: relative;
+    width: 1px; /* Ajusta el ancho según tu diseño */
+    height: 1px; /* Ajusta el alto según tu diseño */
+  }
+  
+  .container img {
+    position: absolute;
+    top: 100px; /* Ajusta la posición vertical */
+    left: 100px; /* Ajusta la posición horizontal */
+  }
+  .container2 img {
+    position: absolute;
+    top: 300px; /* Ajusta la posición vertical */
+    left: 600px; /* Ajusta la posición horizontal */
+  }
+  .container3 img {
+    position: absolute;
+    top: 300px; /* Ajusta la posición vertical */
+    left: 1100px; /* Ajusta la posición horizontal */
+  }
+
+  
+  
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+  
+
+.div2 {
+  grid-column: span 3 / span 3;
+}
+
+.div3 {
+  grid-column-start: 5;
+}
+
+.div4 {
+  grid-column: span 5 / span 5;
+  grid-row: span 4 / span 4;
+  grid-row-start: 2;
+}
+.rou {
+  background-color: #88B3E8;
+  border-radius: 10px; /* Solo si quieres bordes redondeados */
+  border-collapse: collapse; /* Para evitar bordes duplicados */
+}
+
+.rou td {
+  width: 150px; 
+  height: 50px; 
+  text-align: center; /* Centra el contenido horizontalmente */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+  font-family: Arial, sans-serif; 
+  font-size: 30px;
+}
+
+
+/* Opcional: ajustar el tamaño de la imagen */
+.rou img {
+  border-radius: 50%; /* Hace la imagen circular */
+
+
+}
